@@ -15,5 +15,7 @@ public class PaymentTest {
         System.out.println(payment.getPayName() + "is created");
         payment = PayFactoryHoder.getPaymentFactory(WXPayFactory.class).createPayment();
         System.out.println(payment.getPayName() + "is created");
+        payment = PayFactoryHoder.getPaymentFactory(TLPayFactory.class).createPayment();
+        System.out.println(payment.getPayName() + "is created");
     }
 }
